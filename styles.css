@@ -1,0 +1,81 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #ffffc5; /* Fondo claro */
+    color: #343a40; /* Color de texto oscuro */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    background-color: #f7d58d; /* Fondo blanco para el contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título de la aplicación */
+h1 {
+    color: #000000; /* Color azul para el título */
+}
+
+/* Estilo del input group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo del input de tareas */
+#taskNameInput, #taskStartDateInput, #taskEndDateInput, #taskResponsibleInput {
+    border: 1px solid #efab55; /* Borde gris claro */
+    border-radius: 4px;
+}
+
+/* Botón para agregar tareas */
+#addTaskButton {
+    background-color: #efab55; /* Color de fondo verde */
+    color: black; /* Color de texto blanco */
+}
+
+/* Lista de tareas */
+#taskList .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #efab55; /* Borde gris claro */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Tareas completadas */
+#taskList .task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #6c757d; /* Color gris */
+}
+
+/* Botones de tarea */
+.toggle-complete {
+    background-color: #d38c83; /* Color de fondo amarillo */
+    color: white; /* Color de texto blanco */
+}
+
+.delete-task {
+    background-color: #864640; /* Color de fondo rojo */
+    color: white; /* Color de texto blanco */
+}
+
+/* Tareas marcadas */
+.task-item.marked {
+    background-color: #ffff8f; /* Fondo amarillo claro */
+}
+
+/* Tareas completadas */
+.task-item.completed {
+    background-color: #d4edda; /* Fondo verde claro */
+    border-color: #c3e6cb; /* Borde verde claro */
+}
+
+/* Tareas vencidas */
+.task-item.expired {
+    background-color: #f8d7da; /* Fondo rojo claro */
+    border-color: #f5c6cb; /* Borde rojo claro */
+    color: #721c24; /* Color de texto rojo oscuro */
+}

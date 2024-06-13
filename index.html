@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Administrador de Tareas</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="taskNameInput" class="form-control" placeholder="Nombre-Tarea" aria-label="Task Name">
+            <input type="date" id="taskStartDateInput" class="form-control" aria-label="Start Date">
+            <input type="date" id="taskEndDateInput" class="form-control" aria-label="End Date">
+            <input type="text" id="taskResponsibleInput" class="form-control" placeholder="Responsable" aria-label="Responsible">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="addTaskButton">Agregar</button>
+            </div>
+        </div>
+        <ul class="list-group" id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
